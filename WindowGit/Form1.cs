@@ -12,12 +12,22 @@ namespace WindowGit
 {
     public partial class Form1 : Form
     {
+        static int move = 0;
         public Form1()
         {
             InitializeComponent();
         }
 
         private void button1_Click(object sender, EventArgs e)
+        {
+            if(move%2 == 0)
+                button1.BackColor = Color.GreenYellow;
+            else
+                button1.BackColor = Color.AliceBlue;
+            move++;
+        }
+
+        private void button2_Click(object sender, EventArgs e)
         {
 
         }
